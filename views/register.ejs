@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+
+<div class="ui raised very padded text container segment" id="log">
+    <div class="ui inverted segment">
+      <div class="ui inverted form">
+          <form action="/register" method="POST">
+            <div class="two fields">
+              <div class="field">
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Username">
+              </div>
+              <div class="field">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the terms and conditions</label>
+              </div>
+            </div>
+            <button class="ui secondary button">Sign Up</button>
+          </form>
+      </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>
